@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/car_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/car_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
@@ -32,11 +32,39 @@
             android:name=".WelcomeActivity"
             android:parentActivityName=".Main2Activity"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
-        <activity android:name=".CarListActivity" />
+        <activity
+            android:name=".CarListActivity"
+            android:label="Car Activity"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        </activity>
         <activity
             android:name=".BookActivity"
             android:label="@string/title_activity_book"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:parentActivityName=".CarListActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".PoliciesActivity"
+            android:label="Policies"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="Help"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        </activity>
+        <activity
+            android:name=".SuccessActivity"
+            android:label="Success"
+            android:parentActivityName=".BookActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        </activity>
     </application>
 
 </manifest>
