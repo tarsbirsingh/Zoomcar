@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "674344121534",
+    "firebase_url": "https://zoomcar-9666c.firebaseio.com",
+    "project_id": "zoomcar-9666c",
+    "storage_bucket": "zoomcar-9666c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674344121534:android:a352b46c56b0f4b1",
+        "android_client_info": {
+          "package_name": "com.example.tarsbir.zoomcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674344121534-v7k3st1oqbfpr14hrpc43si6j8h90l7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tarsbir.zoomcar",
+            "certificate_hash": "992caeadee1e106d24902e718d8ae5a32a9270d9"
+          }
+        },
+        {
+          "client_id": "674344121534-i4qlsnnmo4sofhl52qb97u7o4jv8j1jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYItW2pvZBd4rs_RQPLkQ2VLjWsZHnCk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674344121534-i4qlsnnmo4sofhl52qb97u7o4jv8j1jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

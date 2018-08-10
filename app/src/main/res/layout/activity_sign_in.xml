@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_back"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logosign1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name_signIn_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="tarsbirsingh@gmail.com"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/password_signIn_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/SignIn_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/sign_back"
+            android:text="Sign in"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?  "
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/signUp_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

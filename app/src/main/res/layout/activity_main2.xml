@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Main2Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:titleTextColor="@android:color/white" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_marginTop="55dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/one1" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/sign1"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/find_car_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="194dp"
+            android:text="Find Car"
+            android:textColor="@android:color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ready_car_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/find_car_text_view"
+            android:layout_below="@+id/find_car_text_view"
+            android:layout_marginTop="-194dp"
+            android:text="Ready For Go "
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="255dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:id="@+id/car_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/carimg" />
+
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>
