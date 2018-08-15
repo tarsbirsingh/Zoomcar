@@ -119,7 +119,7 @@ public class BookActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Fill correct Mobile Number", Toast.LENGTH_LONG).show();
             } else {
                 //Toast.makeText(BookActivity.this, "Thanks for Booking", Toast.LENGTH_LONG).show();
-                //String keyName="Name",keyKm ="KM",user="User";
+                //String value keyName="Name",keyKm ="KM",user="User";
                 Map<String, Object> taskMap = new HashMap<>();
                 taskMap.put("Name", name.getText().toString());
                 taskMap.put("Without Fuel km", km.getText().toString());
