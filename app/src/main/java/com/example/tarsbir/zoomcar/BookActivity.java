@@ -108,7 +108,7 @@ public class BookActivity extends AppCompatActivity {
             }
         });
 
-        //Booking Without Fuel for car
+        //Booking Without Fuel for new car
         bookWithoutButton.setOnClickListener(v -> {
             if (name.getText().toString().isEmpty() || day.getText().toString().isEmpty() || phoneno.getText().toString().isEmpty() || address.getText().toString().isEmpty()) {
                 Toast.makeText(BookActivity.this, "Fill blank", Toast.LENGTH_SHORT).show();
